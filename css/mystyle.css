@@ -1,0 +1,27 @@
+body{
+	font-family: monospace;
+	background: #33D18B;
+	color: #2FA06E;
+}
+
+body:hover{
+	background: blue;
+}
+section{
+	text-align: center;
+	border: 1px solid blue;
+	color:red;
+	background: aliceblue;
+	width: 700px;
+	padding-top: 40px;
+	top:10%;
+}
+section:hover{
+	color: blue;
+	background: lime;
+}
+
+section article a:hover{
+	font-size: 3rem;
+	color: red;
+}
