@@ -1,27 +1,46 @@
-body{
-	font-family: monospace;
-	background: #33D18B;
-	color: #2FA06E;
+body {
+    font-family: monospace;
+    color: #30856e;
+    text-align: center;
 }
-
-body:hover{
-	background: blue;
+h1{
+	font-family: fantasy;
+	font-size: 2rem;
+	color: #32538c;
+	text-shadow: 1px 1px 2px black; 
 }
-section{
-	text-align: center;
-	border: 1px solid blue;
-	color:red;
-	background: aliceblue;
-	width: 700px;
-	padding-top: 40px;
-	top:10%;
+section {
+    text-align: center;
+    border: 1px solid blue;
+    color: #30856e;
+    background: aliceblue;
+    width: auto;
+    padding: 20px;
 }
-section:hover{
-	color: blue;
-	background: lime;
+.imagen {
+    background: url(../img/descarga.png) no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    margin: 0px;
+    background-color: #FFFFFF;
+    width: auto;
+    height: 150px;
 }
-
-section article a:hover{
-	font-size: 3rem;
-	color: red;
+.imagen:hover {
+    background: url(../img/descarga2.png) no-repeat;
+    background-position: center;
+    border: 1px solid #14dbd5;
+    margin: 0px;
+    background-color: black;
+    width: auto;
+    height: 150px;
+}
+a {
+    text-decoration: none;
+    color: #14dbd5;
+    font-size: 1.3rem;
+}
+a:hover {
+    color: #1c9995;
+    font-size: 1.4rem;
 }
