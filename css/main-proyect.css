@@ -3,12 +3,16 @@ body {
 }
 .hero {
     background-image: url(../img/hero.jpg);
+    width: 100%;
     height: 95vh;
     background-position: top center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav-list-sm {
+    display: none;
 }
 nav a {
     text-decoration: none;
@@ -17,8 +21,7 @@ nav a {
 }
 a:hover {
     color: black;
-    background: white;
-    font-size: 1.1rem;
+    background: #ededed;
     font-weight: 900;
 }
 nav {
@@ -28,6 +31,8 @@ nav {
     top: 30px;
     width: auto;
     border-radius: 5px;
+    margin-left: 80px;
+    z-index: 10;
 }
 #nav-title {
     width: auto;
@@ -51,6 +56,9 @@ nav ul li {
     float: right;
     width: auto;
 }
+.user-picture-container {
+    width: 60%;
+}
 .user-picture {
     background-image: url(../img/usuario.jpg);
     height: 350px;
@@ -73,10 +81,9 @@ nav ul li {
     border-width: 4px;
     border-style: solid;
     border-color: #34d183;
-    
 }
 .user-info {
-    width: 400px;
+    width: 40%;
     margin-right: 100px;
     margin-top: 60px;
 }
@@ -85,8 +92,45 @@ nav ul li {
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+    nav {
+        margin-left: 50px;
+    }
+    nav ul li {
+        display: block;
+    }
     .nav-list {
         display: none;
+    }
+    .nav-list-sm {
+        display: block;
+        background: black position: absolute;
+    }
+    .user-picture-container {
+        width: 100%;
+        position: absolute;
+        margin-top: 50px;
+    }
+    .user-info {
+        width: 100%;
+        position: relative;
+        margin-top: 800px;
+        padding-left: 90px;
+    }
+    .user-info h2 {
+        font-size: 1.7rem;
+    }
+    .user-picture {
+        
+        height: 250px;
+        width: 250px;
+        
+    }
+    .user-picture:hover {
+        height: 270px;
+        width: 270px;
+        border-width: 4px;
+        border-style: solid;
+        border-color: #34d183;
     }
 }
