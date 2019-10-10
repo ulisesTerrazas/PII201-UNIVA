@@ -137,15 +137,15 @@ nav ul li {
     margin-right: 1rem;
 }
 .contact-form button {
-    height: 2.5rem;
     border-width: .5px;
     border-style: solid;
     border-color: #5266ff;
     border-radius: 2px;
     margin: 15px 0px;
-    padding: 5px;
+    padding: 15px;
     background: #0b1247;
     color: white;
+    height: 50px;
 }
 .contact-form button:hover {
     background: white;
@@ -210,6 +210,12 @@ nav ul li {
 @media (max-width: 968px) {
     nav {
         margin-left: 50px;
+
+    }
+    nav a {
+        border-color: black;
+        border-width: 0px;
+        padding: 10px;
     }
     nav ul li {
         display: block;
@@ -234,6 +240,7 @@ nav ul li {
     }
     .user-info h2 {
         font-size: 1.7rem;
+        margin-top: 270px;
     }
     .user-picture {
         height: 250px;
